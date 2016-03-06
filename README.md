@@ -1,6 +1,6 @@
 PicoEmbed - for PicoCMS
 ========================
-#### Embed youtube videos in wordpress-like shortcode format
+#### Embed YouTube videos in wordpress-like shortcode format
 
 
 Features
