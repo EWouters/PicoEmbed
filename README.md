@@ -1,2 +1,2 @@
-# pico_embed
-Pico plugin that embed youtube videos (for now) using shortcode format
+# PicoEmbed
+#### Embed youtube videos in wordpress-like shortcode format
