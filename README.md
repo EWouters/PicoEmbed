@@ -1,4 +1,4 @@
-PicoEmbed - for [PicoCMS](https://github.com/picocms/Pico)
+PicoEmbed - plugin for [PicoCMS](https://github.com/picocms/Pico)
 ========================
 #### Embed YouTube videos in wordpress-like shortcode format
 
