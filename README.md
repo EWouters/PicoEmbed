@@ -7,6 +7,8 @@ Features
 -------------------
 + No configuration needed
 + Easy to use
+
+
 Installation :
 -------------------
 Move `PicoEmbed.php` file into the `plugins` directory.
