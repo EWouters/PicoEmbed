@@ -8,10 +8,10 @@ Open the page you would like to embed a youtube video in and insert the followin
 ##### Examples (accepted link formats):
 
 + `[embed "https://youtu.be/YR12Z8f1Dh8"]`.
-+ `[embed "http://youtu.be/YR12Z8f1Dh8]"`.
-+ `[embed "http://youtu.be/YR12Z8f1Dh8]"`.
-+ `[embed "https://www.youtube.com/watch?v=YR12Z8f1Dh8]"`.
-+ `[embed "http://www.youtube.com/watch?v=YR12Z8f1Dh8]"`.
++ `[embed "http://youtu.be/YR12Z8f1Dh8"]`.
++ `[embed "http://youtu.be/YR12Z8f1Dh8"]`.
++ `[embed "https://www.youtube.com/watch?v=YR12Z8f1Dh8"]`.
++ `[embed "http://www.youtube.com/watch?v=YR12Z8f1Dh8"]`.
 + ...ETC
 
 
