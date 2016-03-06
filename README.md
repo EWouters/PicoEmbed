@@ -24,7 +24,7 @@ TODO :
 
 Usage :
 -------------------
-Open the page you would like to embed a youtube video in and insert the following shortcode while replacing `YOUTUBE VIDEO LINK HERE` with your video link.
+Open the page you would like to embed a youtube video in and insert the following shortcode while replacing `YOUTUBE VIDEO LINK HERE` with your actual youtube video link.
 `[embed "YOUTUBE VIDEO LINK HERE"]`
 
 
