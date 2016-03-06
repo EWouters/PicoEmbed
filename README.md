@@ -1,26 +1,35 @@
-# PicoEmbed - for PicoCMS
+PicoEmbed - for PicoCMS
+========================
 #### Embed youtube videos in wordpress-like shortcode format
 
-### Installation :
-===================
+
+
+Installation :
+-------------------
 Move `PicoEmbed.php` file into the `plugins` directory.
 
-### Configuration :
-===================
+
+
+Configuration :
+-------------------
 No configuration needed
 
-### TODO :
-==========
+
+
+TODO :
+-------------------
 + support Vimeo
 + support Soundcould
 
-### Usage :
-=============
+
+Usage :
+-------------------
 Open the page you would like to embed a youtube video in and insert the following shortcode while replacing 'YOUTUBE VIDEO LINK HERE' with your video link.
 `[embed "YOUTUBE VIDEO LINK HERE"]`
 
-##### Examples (accepted link formats):
-=========================================
+
+Examples (accepted link formats):
+--------------------------------------
 
 + `[embed "https://youtu.be/YR12Z8f1Dh8"]`.
 + `[embed "http://youtu.be/YR12Z8f1Dh8"]`.
