@@ -9,24 +9,24 @@ Features
 + Easy to use
 
 
-Installation :
+Installation
 -------------------
 Move `PicoEmbed.php` file into the `plugins` directory.
 
 
 
-Configuration :
+Configuration
 -------------------
 No configuration needed
 
 
-Usage :
+Usage
 -------------------
 Open the page you would like to embed a youtube video in and insert the following shortcode while replacing `YOUTUBE VIDEO LINK HERE` with your actual youtube video link.
 `[embed "YOUTUBE VIDEO LINK HERE"]`
 
 
-Examples (accepted link formats):
+Examples (accepted link formats)
 --------------------------------------
 
 + `[embed "https://youtu.be/YR12Z8f1Dh8"]`.
@@ -37,7 +37,7 @@ Examples (accepted link formats):
 
 
 
-TODO :
+TODO
 -------------------
 + support Vimeo
 + support Soundcould
