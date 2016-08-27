@@ -1,7 +1,7 @@
 <?php
 
 /**
- * PicoEmbed - Embed youtube videos in wordpress-like shortcode format
+ * PicoEmbed - Embed youtube videos in WordPress-like shortcode format
  *
  * 
  * @author  Saad Bouteraa <s4ad@github>
