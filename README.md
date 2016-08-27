@@ -3,7 +3,7 @@
 *Embed YouTube videos in Wordpress-like shortcode format*
 
 
-Features
+*Features*
 -------------------
 + No configuration needed
 + Easy to use
