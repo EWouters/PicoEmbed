@@ -1,5 +1,5 @@
 <?php
-   
+
 /**
  * PicoEmbed - Embed youtube videos in wordpress-like shortcode format
  *
@@ -40,37 +40,40 @@ final class PicoEmbed extends AbstractPicoPlugin
      */
     public function onPageRendering(Twig_Environment &$twig, array &$twigVariables, &$templateName)
     {
-        
+
 
         // Search for Embed shortcodes allover the content
-        preg_match_all( '#\[embed *.*?\]#s', $twigVariables['content'], $matches );
-        
+        preg_match_all('#\[embed *.*?\]#s', $twigVariables['content'], $matches);
+
         // Make sure we found some shortcodes
-        if(count($matches[0])>0){
-            
+        if (count($matches[0]) > 0) {
+
             // Get page content
             $new_content = &$twigVariables['content'];
 
             // Walk through shortcodes one by one
-            foreach($matches[0] as $match){
+            foreach ($matches[0] as $match) {
 
                 // Get youtube like and video ID (Ref:http://stackoverflow.com/questions/3717115/regular-expression-for-youtube-links/3726073#3726073)
-                preg_match( '#http(?:s)?\:\/\/(?:www\.)?youtu(?:be\.com/watch\?v=|\.be/)([\w\-]+)(&(amp;)?[\w\?=]*)?#s', $match, $embed_link );
-                
+                preg_match('#http(?:s)?\:\/\/(?:www\.)?youtu(?:be\.com/watch\?v=|\.be/)([\w\-]+)(&(amp;)?[\w\?=]*)?#s', $match, $embed_link);
+
                 // Make sure we found the link ($embed_link[0]) and the ID ($embed_link[1])
-                if(count($embed_link)>1){
+                if (count($embed_link) > 1) {
 
                     // Generate embeding code
-                    $embed_code = '<iframe width="854" height="480" src="https://www.youtube.com/embed/'.$embed_link[1].'" frameborder="0" allowfullscreen></iframe>' ;
-                    
+                    $embed_code = '
+                    <iframe id="ytID" width="500" height="480" src="https://www.youtube.com/embed/' . $embed_link[1] . '" frameborder="0" allowfullscreen></iframe>
+                        <script>
+
+                        var parrentYt = document.getElementById("ytID").parentElement;
+                        console.log(parrentYt);
+                        document.getElementById("ytID").width= parrentYt.offsetWidth;
+               
+                        </script>';
                     // Replace embeding code with the shortcode in the content
-                    $new_content = preg_replace('#\[embed *.*?\]#s', $embed_code, $new_content,1);
+                    $new_content = preg_replace('#\[embed *.*?\]#s', $embed_code, $new_content, 1);
+                }
             }
-
-            }
-
         }
     }
-
-    
 }
